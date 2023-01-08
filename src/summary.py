@@ -1,3 +1,6 @@
+import datetime
+
+
 class Summary:
     def __init__(self, asset, status, entry, stop_val, stop_percent, gain_val, gain_percent, long_val, time):
         self.asset = asset
@@ -36,6 +39,6 @@ def compute_summary(chart_data, strategy_data, config_data):
 
     long_val = float(last_chart_record[5])
 
-    time = last_chart_record[0]
+    time = datetime.datetime.fromtimestamp(int(last_chart_record[0]))
 
     return Summary(asset, status, entry, stop_val, stop_percent, gain_val, gain_percent, long_val, time)

@@ -17,3 +17,9 @@ def get_props(filename):
             name, var = line.partition('=')[::2]
             props[name.strip()] = var.strip()
     return props
+
+
+def write_csv(filename, rows):
+    with open(filename, 'w') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerows(rows)
