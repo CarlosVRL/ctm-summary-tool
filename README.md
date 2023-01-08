@@ -28,6 +28,51 @@ name=<name>
 long_stop=<long-stop-percent>
 ```
 
+Usage:
+
+```
+$ python app.py -h
+INFO: CTM Position Summary Tool
+INFO: 
+INFO: INPUTS
+usage: ctm-summary-tool [-h] chart strategy config
+
+Create formatted CTM Position Summary output
+
+positional arguments:
+  chart       chart data
+  strategy    strategy tester data
+  config      strategy description
+
+options:
+  -h, --help  show this help message and exit
+```
+
+Example:
+
+```
+$ python app.py test/resources/chart-data.csv test/resources/strategy-tester-data.csv test/resources/config.properties 
+INFO: CTM Position Summary Tool
+INFO: 
+INFO: INPUTS
+INFO: > chart    : test/resources/chart-data.csv
+INFO: > strategy : test/resources/strategy-tester-data.csv
+INFO: > config   : test/resources/config.properties
+INFO:
+INFO: SUMMARY
+INFO: > asset        : ETHUSD_CTM221105
+INFO: > status       : Long Trade Active
+INFO: > entry        : 1251.8
+INFO: > stop_val     : 1101.58
+INFO: > stop_percent : 12.0
+INFO: > gain_val     : 12.29
+INFO: > gain_percent : 0.98
+INFO: > long_val     : 41.95
+INFO: > time         : 1673049600
+INFO:
+INFO: Summary Complete
+```
+
 ## TODO
 
 * Design an automated mechanism for pulling inputs (1) and (2)
