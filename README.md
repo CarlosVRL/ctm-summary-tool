@@ -68,7 +68,10 @@ INFO: > stop_percent : 12.0
 INFO: > gain_val     : 12.29
 INFO: > gain_percent : 0.98
 INFO: > long_val     : 41.95
-INFO: > time         : 1673049600
+INFO: > time         : 2023-01-06 18:00:00
+INFO:
+INFO: OUTPUT
+INFO: > summary.csv
 INFO:
 INFO: Summary Complete
 ```
