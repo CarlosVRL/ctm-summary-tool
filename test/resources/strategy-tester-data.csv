@@ -1,0 +1,7 @@
+Trade #,Type,Signal,Date/Time,Price USD,Contracts,Profit USD,Profit %,Cum. Profit USD,Cum. Profit %,Run-up USD,Run-up %,Drawdown USD,Drawdown %
+47,Exit Long,Open,,,,,,,,,,,
+47,Entry Long,long,2023-01-04 08:00,1251.80,,,,,,,,,
+46,Exit Long,Close entry(s) order long,2022-12-16 00:00,1266.60,4.2948,-241.53,-4.26,5330.51,-4.26,126.65,2.23,265.98,4.69
+46,Entry Long,long,2022-12-14 00:00,1320.25,4.2948,-241.53,-4.26,5330.51,-4.26,126.65,2.23,265.98,4.69
+45,Exit Long,Close entry(s) order long,2022-12-12 08:00,1246.70,4.5584,-130.14,-2.24,5572.03,-2.24,164.96,2.84,249.22,4.3
+45,Entry Long,long,2022-11-30 08:00,1272.73,4.5584,-130.14,-2.24,5572.03,-2.24,164.96,2.84,249.22,4.3
