@@ -1,6 +1,6 @@
 from src.banner import header, get_inputs, footer
 from src.setup_logger import log
-from src.inputs import Inputs
+from src.util import get_csv, get_props
 
 
 def main():
@@ -14,11 +14,11 @@ def main():
     log.info('> config   : %s', inputs.config)
     log.info('')
 
-    # read input 1
+    chart_data = get_csv(inputs.chart)
 
-    # read input 2
+    strategy_data = get_csv(inputs.strategy)
 
-    # read input 3
+    config_data = get_props(inputs.config)
 
     # create outputs
 
